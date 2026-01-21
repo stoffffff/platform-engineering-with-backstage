@@ -11,6 +11,9 @@ def home():
         'hostname': socket.gethostname(),
         'time': datetime.datetime.now().strftime("%I:%M:%S%p  on %B %d, %Y")
         })
+@app.route("/hello")
+def home():
+    return 'Hello There ! :)'
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0')
