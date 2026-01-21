@@ -12,7 +12,7 @@ def home():
         'time': datetime.datetime.now().strftime("%I:%M:%S%p  on %B %d, %Y")
         })
 @app.route("/hello")
-def home():
+def say_hello():
     return "Hello There ! :)"
 
 if __name__ == "__main__":
