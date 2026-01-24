@@ -1,5 +1,5 @@
 # platform-engineering-with-backstage
-***STEPS***<br>
+# STEPS<br>
 # Setup | Foundamentals of DevOps
 - Write a flask app code. ✅​<br>
 - Build it as a docker Image. ✅​ <br> 

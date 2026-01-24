@@ -13,7 +13,7 @@ def home():
         })
 @app.route("/hello")
 def say_hello():
-    return "Hello There ! :)"
+    return "Hello There ! Version 3"
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0')
