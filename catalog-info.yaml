@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: flask-stof
+  description: A very cute flask app
 spec:
   type: service
   lifecycle: staging
