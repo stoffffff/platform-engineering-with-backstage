@@ -28,7 +28,7 @@ spec:
       license:
         name: stoffffff
     servers:
-      - url: http://YOUR_SERVER_IP:5000
+      - url: http://192.168.11.111:8080
     paths:
       /main:
         get:
