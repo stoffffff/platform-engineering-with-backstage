@@ -7,3 +7,30 @@ spec:
   type: service
   lifecycle: staging
   owner: guests
+  providesApis:
+    - flask-stof-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: flask-stof-api
+  description: Main API that returns hostname and time
+spec:
+  owner: developers
+  type: openapi
+  lifecycle: staging
+  apiProvidedBy: component:flask-stof
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Main API
+      license:
+        name: stoffffff
+    servers:
+      - url: http://YOUR_SERVER_IP:5000
+    paths:
+      /main:
+        get:
+          summary: Hostname + Time
+    ...
